@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main{
+        height: 100%;
+        width: 100%;
+        background-color: #111;
+        position: relative;
+    }
+    .elem{
+        height: 120px;
+        width: 100%;
+        border-bottom: 2px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .elem h1{
+        font-size: 6vw;
+        color: white;
+        z-index: 9;
+        mix-blend-mode: difference;
+    }
+    .elem img{
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        position: absolute;   
+        transition: all linear 0.3s;
+        opacity: 0; 
+    }
+</style>
+<body>
+    <div id="main">
+        <div class="elem">
+            <h1>Rohit Sharma</h1>
+            <img src="rohit.avif" alt="">
+        </div>
+        <div class="elem">
+            <h1>Virat Kohli</h1>
+            <img src="Virat.webp" alt="">
+        </div>
+        <div class="elem">
+            <h1>Yashasvi Jaiswal</h1>
+            <img src="jaiswal.avif" alt="">
+        </div>
+        <div class="elem">
+            <h1>Shubham Gill</h1>
+            <img src="gill.jpeg" alt="">
+        </div>
+    </div>
+    <script src="/javascript-11(hover)/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+    #main{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(10, 10, 10);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cursor{
+        height: 20px;
+        width: 20px;
+        background-color: white;
+        border-radius: 50%;
+        mix-blend-mode: difference;
+        position: absolute;
+        transition: all linear 0.2s;
+    }
+    h1{
+        font-size: 9vw; 
+        font-weight: 900;
+    }
+</style>
+<body>
+<div id="main">
+    <div class="cursor"></div>
+    <h1>ROHIT</h1>
+</div>
+</body>
+<script src="/javascript-10(custom cursor)/index.js"></script>
+</html>

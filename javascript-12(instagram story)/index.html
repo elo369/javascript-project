@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        background-color: cyan;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card {
+        height: 420px;
+        width: 300px;
+        background-color: #fff;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    #storiyan {
+        height: 100px;
+        width: 90%;
+        border-bottom: 1px solid #dadada;
+        padding: 15px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    #storiyan::-webkit-scrollbar{
+        display: none;
+    }
+    .story {
+        /* border: 3px solid ; */
+        height: 90px;
+        border-radius: 50%;
+        width: 90px;
+        overflow: hidden;
+        padding: 3px;
+        background: linear-gradient(yellow, pink, orange, red, blue);
+        display: inline-block;
+    }
+
+    .story img {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+    }
+    #full-screen{
+        height: 100%;
+        width: 100%;
+        /* background-color: red; */
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        display: none;
+    }
+</style>
+
+<body>
+    <div id="card">
+        <div id="full-screen"></div>
+        <div id="storiyan">
+           
+        </div>
+    </div>
+    <script src="/javascript-12(instagram story)/index.js"></script>
+</body>
+
+</html>

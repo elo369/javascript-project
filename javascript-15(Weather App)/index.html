@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#app {
+    text-align: center;
+    background-image: url("https://media.istockphoto.com/id/824800468/photo/sun-on-blue-sky-with-clouds.jpg?s=612x612&w=0&k=20&c=1XKIS7ggyyhj2oCZQluzIV579pkCBHq_-h9Vo4yNTmc=");
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow:10px 5px 5px black;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: skyblue;
+    color: black;
+    margin: 3px;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: rgb(245, 205, 130);
+    border-radius: 5px;
+    border: none;
+    margin: 3px;
+}
+
+#weatherInfo {
+    margin-top: 20px;
+}
+
+#weatherInfo p{
+    color: black;
+    font-weight: bold;
+}
+
+</style>
+<body>
+    <div id="app">
+        <h1>Weather App</h1>
+        <input type="text" id="locationInput" placeholder="Enter city">
+        <button id="getWeatherBtn">Get Weather</button>
+        <div id="weatherInfo">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="location"></p>
+        </div>
+    </div>
+    <script src="/javascript-15(Weather App)/index.js"></script>
+</body>
+</html>
+<!--  -->
